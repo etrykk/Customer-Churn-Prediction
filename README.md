@@ -1,8 +1,8 @@
-\# Customer Churn Prediction Using Machine Learning
+# Customer Churn Prediction Using Machine Learning
 
 
 
-\## Project Overview
+## Project Overview
 
 
 
@@ -18,11 +18,11 @@ Three model configurations were evaluated:
 
 
 
-\- Logistic Regression
+- Logistic Regression
 
-\- Random Forest Classifier
+- Random Forest Classifier
 
-\- Tuned Random Forest Classifier
+- Tuned Random Forest Classifier
 
 
 
@@ -30,7 +30,7 @@ Three model configurations were evaluated:
 
 
 
-\## Dataset
+## Dataset
 
 
 
@@ -46,19 +46,19 @@ Key variables include:
 
 
 
-\- `tenure` — Number of months a customer has remained with the company
+- `tenure` — Number of months a customer has remained with the company
 
-\- `MonthlyCharges` — Monthly service charges
+- `MonthlyCharges` — Monthly service charges
 
-\- `TotalCharges` — Total amount charged to a customer
+- `TotalCharges` — Total amount charged to a customer
 
-\- `Contract` — Month-to-month, one-year, or two-year contract
+- `Contract` — Month-to-month, one-year, or two-year contract
 
-\- `InternetService` — DSL, fiber optic, or no internet service
+- `InternetService` — DSL, fiber optic, or no internet service
 
-\- `PaymentMethod` — Customer payment method
+- `PaymentMethod` — Customer payment method
 
-\- `Churn` — Whether the customer discontinued service
+- `Churn` — Whether the customer discontinued service
 
 
 
@@ -66,13 +66,13 @@ The target variable, `Churn`, was converted into binary values:
 
 
 
-\- `1` = Customer churned
+- `1` = Customer churned
 
-\- `0` = Customer remained
+- `0` = Customer remained
 
 
 
-\## Technologies Used
+## Technologies Used
 
 
 
@@ -82,15 +82,15 @@ The target variable, `Churn`, was converted into binary values:
 
 \*\*Libraries:\*\*
 
-\- Pandas — Data manipulation and preprocessing
+- Pandas — Data manipulation and preprocessing
 
-\- Matplotlib — Data visualization
+- Matplotlib — Data visualization
 
-\- Seaborn — Statistical visualizations
+- Seaborn — Statistical visualizations
 
-\- scikit-learn — Machine learning and model evaluation
+- scikit-learn — Machine learning and model evaluation
 
-\- pathlib — File and directory management
+- pathlib — File and directory management
 
 
 
@@ -98,7 +98,7 @@ The target variable, `Churn`, was converted into binary values:
 
 
 
-\## Data Cleaning and Preprocessing
+## Data Cleaning and Preprocessing
 
 
 
@@ -134,7 +134,7 @@ Feature scaling was fitted using only the training data to prevent test-set info
 
 
 
-\## Exploratory Data Analysis
+## Exploratory Data Analysis
 
 
 
@@ -146,19 +146,19 @@ Five categories were examined:
 
 
 
-\- Contract type
+- Contract type
 
-\- Customer tenure
+- Customer tenure
 
-\- Monthly charges
+- Monthly charges
 
-\- Internet service
+- Internet service
 
-\- Payment method
+- Payment method
 
 
 
-\### Key Findings
+### Key Findings
 
 
 
@@ -226,11 +226,11 @@ These findings describe associations and do not establish that the customer char
 
 
 
-\## Machine Learning Methodology
+## Machine Learning Methodology
 
 
 
-\### Logistic Regression
+### Logistic Regression
 
 
 
@@ -242,7 +242,7 @@ Numerical variables were standardized using `StandardScaler`, and model performa
 
 
 
-\### Random Forest
+### Random Forest
 
 
 
@@ -254,7 +254,7 @@ Random Forest was selected as an additional model because it can capture nonline
 
 
 
-\### Hyperparameter Tuning
+### Hyperparameter Tuning
 
 
 
@@ -266,11 +266,11 @@ The following parameters were evaluated:
 
 
 
-\- `n\_estimators`: 100, 200
+- `n\_estimators`: 100, 200
 
-\- `max\_depth`: 5, 10, None
+- `max\_depth`: 5, 10, None
 
-\- `min\_samples\_split`: 2, 5, 10
+- `min\_samples\_split`: 2, 5, 10
 
 
 
@@ -298,7 +298,7 @@ The grid search evaluated 18 hyperparameter combinations across five cross-valid
 
 
 
-\## Model Evaluation
+## Model Evaluation
 
 
 
@@ -306,7 +306,7 @@ Model performance was evaluated using accuracy, precision, recall, F1-score, and
 
 
 
-\### Model Performance Comparison
+### Model Performance Comparison
 
 
 
@@ -336,7 +336,7 @@ Because the testing dataset was examined during model development, these compari
 
 
 
-\### Logistic Regression Confusion Matrix
+### Logistic Regression Confusion Matrix
 
 
 
@@ -358,7 +358,7 @@ These false negatives are particularly relevant for customer retention because t
 
 
 
-\## Model Interpretation
+## Model Interpretation
 
 
 
@@ -366,37 +366,37 @@ Logistic Regression coefficients were examined to identify customer characterist
 
 
 
-\### Features Associated With Higher Churn Odds
+### Features Associated With Higher Churn Odds
 
 
 
-\- TotalCharges
+- TotalCharges
 
-\- StreamingTV\_Yes
+- StreamingTV\_Yes
 
-\- StreamingMovies\_Yes
+- StreamingMovies\_Yes
 
-\- PaymentMethod\_Electronic check
+- PaymentMethod\_Electronic check
 
-\- OnlineSecurity\_No
+- OnlineSecurity\_No
 
-\- SeniorCitizen
-
-
-
-\### Features Associated With Lower Churn Odds
+- SeniorCitizen
 
 
 
-\- tenure
+### Features Associated With Lower Churn Odds
 
-\- Contract\_Two year
 
-\- InternetService\_DSL
 
-\- MonthlyCharges
+- tenure
 
-\- PaperlessBilling\_No
+- Contract\_Two year
+
+- InternetService\_DSL
+
+- MonthlyCharges
+
+- PaperlessBilling\_No
 
 
 
@@ -408,7 +408,7 @@ Coefficient interpretation requires caution because several numerical variables 
 
 
 
-\## Business Recommendations
+## Business Recommendations
 
 
 
@@ -472,7 +472,7 @@ These predictions could support targeted customer outreach, although real-world 
 
 
 
-\## Project Outputs
+## Project Outputs
 
 
 
@@ -482,33 +482,33 @@ The project generates several visualizations and analytical outputs.
 
 \*\*Exploratory Data Analysis:\*\*
 
-\- `contract\_churn.png`
+- `contract\_churn.png`
 
-\- `tenure\_churn.png`
+- `tenure\_churn.png`
 
-\- `monthly\_charge\_churn.png`
+- `monthly\_charge\_churn.png`
 
-\- `internet\_rates\_churn.png`
+- `internet\_rates\_churn.png`
 
-\- `payment\_rates\_churn.png`
+- `payment\_rates\_churn.png`
 
 
 
 \*\*Model Evaluation:\*\*
 
-\- `prediction\_heatmap.png`
+- `prediction\_heatmap.png`
 
 
 
 \*\*Analytical Outputs:\*\*
 
-\- `model\_comparison.csv`
+- `model\_comparison.csv`
 
-\- `logistic\_regression\_coefficients.csv`
+- `logistic\_regression\_coefficients.csv`
 
 
 
-\## How to Run
+## How to Run
 
 
 
@@ -532,7 +532,7 @@ Hyperparameter tuning can be enabled when additional model optimization is neede
 
 
 
-\## Limitations and Future Improvements
+## Limitations and Future Improvements
 
 
 
@@ -540,23 +540,23 @@ Several improvements could be explored in future versions of the project:
 
 
 
-\- Compare additional classification algorithms, including Gradient Boosting.
+- Compare additional classification algorithms, including Gradient Boosting.
 
-\- Use cross-validation to tune Logistic Regression.
+- Use cross-validation to tune Logistic Regression.
 
-\- Evaluate alternative feature engineering techniques.
+- Evaluate alternative feature engineering techniques.
 
-\- Investigate decision threshold optimization to improve churn recall.
+- Investigate decision threshold optimization to improve churn recall.
 
-\- Use a separate validation strategy for model selection and reserve an untouched test set for final evaluation.
+- Use a separate validation strategy for model selection and reserve an untouched test set for final evaluation.
 
-\- Develop an interactive dashboard for exploring customer churn patterns.
+- Develop an interactive dashboard for exploring customer churn patterns.
 
-\- Test the models using newer or independently collected customer data.
+- Test the models using newer or independently collected customer data.
 
 
 
-\## Conclusion
+## Conclusion
 
 
 
